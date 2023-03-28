@@ -1,0 +1,35 @@
+
+
+
+spring:
+  # 邮件服务配置
+  mail:
+    host: smtp.163.com  # 邮件服务器
+    username: liaolong_test@163.com #（邮箱账号
+    password: FIGNJKMTHWMNAACO # (开通SMTP/POP、SMTP/IMAP协议时的授权密码）
+    # org.springframework.boot.autoconfigure.mail.MailProperties 中的有关Session配置属性
+    # 文档查询
+      # IMAP协议配置 https://javaee.github.io/javamail/docs/api/com/sun/mail/imap/package-summary.html
+      # POP3协议配置 https://javaee.github.io/javamail/docs/api/com/sun/mail/pop3/package-summary.html
+      # SMTP协议配置 https://javaee.github.io/javamail/docs/api/com/sun/mail/smtp/package-summary.html
+    properties:
+      mail:
+        smtp:
+          from: liaolong_test@163.com # 默认发件人
+          auth: true # 开启权限认证
+          timeout: 60000 # 邮件接收超时时间
+          connectiontimeout: 60000 # 连接超时时间
+          writetimeout: 60000 # 邮件发送超时时间
+        debug: true # debug日志打印
+
+
+  # rabbitmq配置
+  rabbitmq:
+    host: 192.168.131.147
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+
+
+
