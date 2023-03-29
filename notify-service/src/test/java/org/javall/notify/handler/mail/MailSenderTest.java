@@ -24,9 +24,9 @@ public class MailSenderTest {
     @Autowired
     IMQSender imqSender;
 
-    private final String from = "liaolong_test@163.com";
+    private final String from = "xxx@163.com";
 
-    private final String to = "1431363512@qq.com";
+    private final String to = "xxx@qq.com";
 
     private final String subject = "Hello";
 
